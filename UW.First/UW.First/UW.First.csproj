@@ -104,6 +104,15 @@
     <Compile Include="Examples\GridLayoutRectangles.xaml.cs">
       <DependentUpon>GridLayoutRectangles.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Examples\StackPanelLayout.xaml.cs">
+      <DependentUpon>StackPanelLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\StackPanelMid.xaml.cs">
+      <DependentUpon>StackPanelMid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\StackPanelVsGrid.xaml.cs">
+      <DependentUpon>StackPanelVsGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
