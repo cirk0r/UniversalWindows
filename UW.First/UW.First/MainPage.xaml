@@ -15,19 +15,29 @@
                 <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
                     Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="Example1" FontFamily="Segoe MDL2 Assets" Content="&#xE825;"
-                    Width="50" Height="50" Background="Transparent" Click="Example1_Click" Tag="E1" IsTapEnabled="False" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False"/>
-                    <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center"/>
+                    <Button x:Name="Example1" FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;"
+                    Width="50" Height="50" Background="Transparent" Click="Example_Click" Tag="E1" IsTapEnabled="False" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False"/>
+                    <TextBlock Text="Grid 1" FontSize="18" VerticalAlignment="Center"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="Example2" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
-                        Width="50" Height="50" Background="Transparent" Click="Example2_Click" Tag="E2"/>
-                    <TextBlock Text="Button 2" FontSize="18" VerticalAlignment="Center" />
+                    <Button x:Name="Example2" FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;"
+                        Width="50" Height="50" Background="Transparent" Click="Example_Click" Tag="E2"/>
+                    <TextBlock Text="Grid 2" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Button x:Name="Example3" FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;"
-                        Width="50" Height="50" Background="Transparent" Click="Example3_Click" Tag="E3"/>
-                    <TextBlock Text="Button 3" FontSize="18" VerticalAlignment="Center" />
+                        Width="50" Height="50" Background="Transparent" Click="Example_Click" Tag="E3"/>
+                    <TextBlock Text="Stack panel 1" FontSize="18" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="Example4" FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;"
+                        Width="50" Height="50" Background="Transparent" Click="Example_Click" Tag="E4"/>
+                    <TextBlock Text="Stack panel 2" FontSize="18" VerticalAlignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="Example5" FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;"
+                        Width="50" Height="50" Background="Transparent" Click="Example_Click" Tag="E5"/>
+                    <TextBlock Text="Stack panel vs grid" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
             </StackPanel>
         </SplitView.Pane>

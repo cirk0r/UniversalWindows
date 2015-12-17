@@ -36,10 +36,15 @@ namespace UW.First
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
 
-        private void Example1_Click(object sender, RoutedEventArgs e)
+        private void Example_Click(object sender, RoutedEventArgs e)
         {
-            this.MySplitView.Content = new GridLayoutNet();
-            SetButtons(((Button)sender).Tag.ToString());
+            string tag = ((Button)sender)?.Tag.ToString();
+
+            if (!string.IsNullOrWhiteSpace(tag))
+            {                
+                OpenExample(tag);
+                SetButtons(tag);
+            }
         }
 
         private void Example2_Click(object sender, RoutedEventArgs e)
@@ -48,18 +53,37 @@ namespace UW.First
             SetButtons(((Button)sender).Tag.ToString());
         }
 
-        private async void Example3_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new MessageDialog("Wait for example");
-            await dialog.ShowAsync();
-            //SetButtons(((Button)sender).Tag.ToString());
-        }
-
         private void SetButtons(string tag)
         {
             Example1.IsTapEnabled = !Example1.Tag.ToString().Equals(tag);
             Example2.IsTapEnabled = !Example2.Tag.ToString().Equals(tag);
             Example3.IsTapEnabled = !Example3.Tag.ToString().Equals(tag);
+        }
+
+        private async void OpenExample(string tag)
+        {
+            switch(tag)
+            {
+                case "E1":
+                    this.MySplitView.Content = new GridLayoutNet();
+                    break;
+                case "E2":
+                    this.MySplitView.Content = new GridLayoutRectangles();
+                    break;
+                case "E3":
+                    this.MySplitView.Content = new StackPanelLayout();
+                    break;
+                case "E4":
+                    this.MySplitView.Content = new StackPanelMid();
+                    break;
+                case "E5":
+                    this.MySplitView.Content = new StackPanelVsGrid();
+                    break;
+                default:
+                    var dialog = new MessageDialog("Wait for example");
+                    await dialog.ShowAsync();
+                    break;
+            }
         }
     }
 }

@@ -8,24 +8,41 @@
     mc:Ignorable="d">
 
     <Grid>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-            <Rectangle Fill="Bisque" Height="200" Width="200" VerticalAlignment="Top"/>
-            <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal">
-                    <Rectangle Width="100" Height="100" Fill="Red"></Rectangle>
-                    <StackPanel Orientation="Vertical">
-                        <Rectangle Width="100" Height="50" Fill="RosyBrown"></Rectangle>
-                        <Rectangle Width="100" Height="50" Fill="DarkCyan"></Rectangle>
+        <StackPanel x:Name="RootPanel">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Rectangle Fill="Bisque" Height="200" Width="200" VerticalAlignment="Top"/>
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="100" Height="100" Fill="Red"></Rectangle>
+                        <StackPanel Orientation="Vertical">
+                            <Rectangle Width="100" Height="50" Fill="RosyBrown"></Rectangle>
+                            <Rectangle Width="100" Height="50" Fill="DarkCyan"></Rectangle>
+                        </StackPanel>
                     </StackPanel>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Rectangle Width="100" Height="100" Fill="Tomato"></Rectangle>
-                    <StackPanel Orientation="Vertical">
-                        <Rectangle Width="100" Height="50" Fill="Green"></Rectangle>
-                        <Rectangle Width="100" Height="50" Fill="Yellow"></Rectangle>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Width="100" Height="100" Fill="Tomato"></Rectangle>
+                        <StackPanel Orientation="Vertical">
+                            <Rectangle Width="100" Height="50" Fill="Green"></Rectangle>
+                            <Rectangle Width="100" Height="50" Fill="Yellow"></Rectangle>
+                        </StackPanel>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="Red" Height="100" Width="100"></Rectangle>
+                    <Rectangle Fill="GreenYellow" Height="100" Width="100"></Rectangle>
+                    <Rectangle Fill="Red" Height="100" Width="100"></Rectangle>
+                    <Rectangle Fill="GreenYellow" Height="100" Width="100"></Rectangle>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="Gray" Height="100" Width="100"></Rectangle>
+                    <Rectangle Fill="Firebrick" Height="100" Width="100"></Rectangle>
+                    <Rectangle Fill="NavajoWhite" Height="100" Width="100"></Rectangle>
+                    <Rectangle Fill="CadetBlue" Height="100" Width="100"></Rectangle>
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
+
     </Grid>
 </Page>
